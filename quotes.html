@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+
+<style> 
+
+	body{
+		color : white;
+		width: 1000px;
+		height: 800px;
+		background-image: linear-gradient(#ff1a1a, #ff471a, #ffa64d);
+		font-family: 'Fuzzy Bubbles', cursive;
+	}
+
+		
+		#cloud{
+			width:700px;
+			height:700px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			font-size:40px;
+			color : white;
+			text-align:center;
+			padding-top:100px;
+			background-image: url(cloud.png);
+			position: absolute;
+			left: 30%;
+			top: 30%;
+
+		}
+	
+
+</style>
+</head>
+<body>
+<div id=title>Comfort Quotes Generator </div>
+	
+
+
+<div id="cloud"></div> 
+
+<script>
+	
+var cloud = document.getElementById('cloud'); 
+
+cloud.addEventListener("click", function(){console.log("hi");
+	// console.log(Math.round(Math.random()*9))
+cloud.innerText = quotes[Math.round(Math.random()*12)];
+
+
+});
+
+	var quotes = ["be happy", "it's not selfish to worry about yourself", "cry if you need to, you wont be judged", "think before you do things, it's okay if it made you smile but made other's smile too", "do what YOU want to do, dont let other's influence who you want to be", "don't be so stuck to the past when all we have left to chance is the future", "take hold of what you can control, not what you can't control", "you are who you are, changing because of the one's around you is never worth it", "tell someone if something is wrong, someone will always be listening","grow to become a good person, not just a successful person","take time for yourself, you are just as important as everyone else", "treat yourself to small things from time to time, it's okay", "change takes time, don't be worried that nothing will change, it will"];
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

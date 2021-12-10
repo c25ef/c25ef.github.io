@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function balloonBob (){
+
+var red = (Math.random()*255);
+var green = (Math.random()*255);
+var blue = (Math.random()*255);
+
+let balloon = document.createElement("div");
+document.body.appendChild(balloon);
+balloon.classList.add("cookie");
+
+balloon.style.width = "50px";
+balloon.style.height = "50px";
+balloon.style.backgroundColor = "rgb("+ red + "," + green + "," + blue +")";
+console.log("rgb("+ red, green, blue + ")");
+balloon.style.borderRadius = "50%";
+balloon.style.position = "relative";
+balloon.style.display = "inline-block"
+}
+document.addEventListener("click", balloonBob)
+
+</script>
+</body>
+</html>
