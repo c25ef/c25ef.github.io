@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.red{
+			width: 100px;
+			height: 100px;
+			background-image: url(red.png);
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+
+	<script type="text/javascript">
+		function makeRed (){
+			var red = document.createElement("div")
+			document.bidy.appendChild(red);
+			red.classList.add("red")
+		}
+		document.addEventListener("click",makeRed)
+	</script>
+</body>
+</html>
