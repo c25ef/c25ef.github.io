@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+
+<style> 
+
+	body{
+		color : white;
+		width: 1000px;
+		height: 800px;
+		background-image: linear-gradient(#e60000, #ff4d4d, #ffb3b3);
+		font-family: 'Fuzzy Bubbles', cursive;
+	}
+
+		
+		#cloud{
+			width:700px;
+			height:700px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			font-size:40px;
+			color : white;
+			text-align:center;
+			padding-top:100px;
+			background-image: url(heart.jpg);
+			position: absolute;
+			left: 30%;
+			top: 30%;
+
+		}
+	
+
+</style>
+</head>
+<body>
+<div id=title>Happy Valentine's Day</div>
+	
+
+
+<div id="cloud"></div> 
+
+<script>
+	
+var cloud = document.getElementById('cloud'); 
+
+cloud.addEventListener("click", function(){console.log("hi");
+	// console.log(Math.round(Math.random()*9))
+cloud.innerText = quotes[Math.round(Math.random()*3)];
+
+
+});
+
+	var quotes = ["Thank you for everything", "Happy Valentine's Day", "Be happy"];
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    .heart {
+        width: 200px;
+        height: 95px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        color: #ffffff;
+        text-align: center;
+        font-size: 13px;
+     
+        padding-top: 45px;
+    
+        padding-left: -1000%;
+
+     
+
+    }
+
+    #logo {
+        background-image: url("heart.png");
+        width: 500px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+    
+
+    }
+
+    #line {
+        
+        height: 60px;
+        font-size: 40px;
+        background-color: pink;
+        color: white;
+
+
+    }
+
+    #read{
+        margin-top: -4.5%;
+        color: red;
+        background-color: lightpink;
+        position:relative;
+
+    }
+    </style>
+</head>
+
+<body>
+    <h1 id="line">Happy Valentine's Day<div id="logo"></div>
+    </h1>
+<br>
+   
+    <script type="text/javascript">
+    function makeHeart() {
+        var message = ["be happy","thank you for everything", "stay safe", "take care of yourself", "smile more", "you are beautiful", "enjoy every single day", "you deserve the world", "i'll see you soon", "we can do this", "love yourself", "we'll be ok","you're beautiful", "lets enjoy our time", "stay safe","don't stress, it'll be okay"];
+
+
+        var image = ["url(green.png)", "url(blue.png)", "url(purple.png)", "url(pink.png)", "url(orange.png)", "url(yellow.png)"];
+        
+
+        var randomNumber2 = Math.round(Math.random() * 5)
+        
+
+        var randomNumber = Math.round(Math.random() * 14)
+       
+
+        var heart = document.createElement("div");
+        
+
+        document.body.appendChild(heart);
+
+
+
+        heart.classList.add("heart");
+        heart.style.opacity = "80";
+        heart.innerText = message[randomNumber];
+        heart.style.backgroundImage = image[randomNumber2];
+
+        document.body.appendChild(heart);
+
+
+
+        var move = setInterval(move, 500);
+
+        function move() {
+            heart.style.left = Math.round(Math.random() * 950) + "px";
+            heart.style.top = Math.round(Math.random() * 600) + "px";
+            heart.style.opacity ="0"
+        };
+
+
+
+    }
+    for (var i = 0; i < 45; i++) {
+        makeHeart();
+    }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style type="text/css">
+	
+
+	h1{
+	font-size: 50px;
+	text-align: center;
+	color:  red;
+	font-family: dancing script
+
+}
+
+
+#image{
+		height: 400px;
+		background-size: cover;
+		position: relative;
+		top: 200px;
+		background-image: url(https://i.pinimg.com/236x/06/d0/f0/06d0f08a700727ce75048664faa54a85.jpg);
+
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+
+
+	}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+	<center>
+	
+
+<h1>Thank You For Everything Mom!</h1>
+
+	<div id="image"></div>
+
+
+
+	</div>
+</center>
+
+
+	<script type="text/javascript">
+		var image = document.getElementById("image");
+
+		image.addEventListener("click", function(){
+			image.style.backgroundImage="url()";
+			image.innerText = "Thank you for always being there for me along with dad!"
+		})
+	</script>
+
+
+</body>
+</html>
